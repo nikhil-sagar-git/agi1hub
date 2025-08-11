@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - AGRIHUB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+ <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">AGRIHUB</div>
+        <nav>
+            <ul>
+                 <li><a href="{{ url_for('homenew')}}">Home</a></li>
+                <li><a href="{{ url_for('aboutnew')}}">About Us</a></li>
+                <li><a href="{{ url_for('communitynew')}}">Community</a></li>
+                <li><a href="{{ url_for('supportnew')}}">Support</a></li>
+<li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="communitynew-container">
+            <h1>Join Our Community</h1>
+            <p>AGRIHUB is more than just a platform; it's a community of passionate farmers and agricultural enthusiasts. Join us to share experiences, ask questions, and connect with others in the field.</p>
+            <h2>Community Benefits</h2>
+            <ul>
+                <li>Access to a network of farmers for support and advice.</li>
+                <li>Participation in forums and discussion groups.</li>
+                <li>Sharing success stories and best practices.</li>
+                <li>Regular webinars and events with industry experts.</li>
+            </ul>
+            <a href="https://whatsapp.com/channel/0029VaofjkDEawdmiDz3yn2k" target="_blank" class="cta-button">Join Our WhatsApp Community</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AGRIHUB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

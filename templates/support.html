@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - AGRIHUB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+ <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">AGRIHUB</div>
+        <nav>
+            <ul>
+                 <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('about')}}">About Us</a></li>
+                <li><a href="{{ url_for('community')}}">Community</a></li>
+                <li><a href="{{ url_for('support')}}">Support</a></li>
+                <li><a href="{{ url_for('login') }}" class="cta-button">Login</a>
+</li>
+                <li><a href="{{ url_for('signup') }}" class="cta-button">Sign Up</a>
+</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="support-container">
+            <h1>Support</h1>
+            <p>We are here to help you with any questions or concerns you may have about our platform or agricultural practices. Our support team is dedicated to providing timely and effective assistance.</p>
+            <h2>Contact Us</h2>
+            <p>For support inquiries, please reach out via:</p>
+            <ul>
+                <li>Email: support@agrihub.com</li>
+                <li>Phone: +1-234-567-890</li>
+                <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp Support</a></li>
+            </ul>
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <p>Check out our <a href="#">FAQ section</a> for quick answers to common questions.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AGRIHUB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

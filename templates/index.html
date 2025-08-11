@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRIHUB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">AGRIHUB</div>
+        <nav>
+            <ul>
+                 <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('about')}}">About Us</a></li>
+                <li><a href="{{ url_for('community')}}">Community</a></li>
+                <li><a href="{{ url_for('support')}}">Support</a></li>
+                <li><a href="{{ url_for('login') }}" class="cta-button">Login</a>
+<!-- Login Button -->
+                <li><a href="{{ url_for('signup') }}" class="cta-button">Sign Up</a></li> <!-- Sign Up Button -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Welcome to AGRIHUB</h1>
+            <p>Your one-stop solution for all agricultural needs.</p>
+            <a href="https://wa.me/1234567890" target="_blank" class="cta-button">Join Our Community</a>
+        </section>
+        <section class="features">
+            <h2>Featured Highlights</h2>
+            <div class="feature-item">
+                <img src="/static/images/resource.jpg" alt="Agricultural Resources">
+                <h3>Agricultural Resources</h3>
+                <p>Access a variety of articles and guides tailored for farmers.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/static/images/market.jpg" alt="Market Insights">
+                <h3>Market Insights</h3>
+                <p>Stay updated with the latest market trends and prices.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/static/images/tools.jpg" alt="Tools & Calculators">
+                <h3>Tools & Calculators</h3>
+                <p>Utilize our tools for effective crop planning and profitability.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AGRIHUB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

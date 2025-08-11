@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Choices - AGRIHUB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">AGRIHUB</div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('homenew') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutnew') }}">About Us</a></li>
+                <li><a href="{{ url_for('communitynew') }}">Community</a></li>
+                <li><a href="{{ url_for('supportnew') }}">Support</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="crop-choice-container">
+            <h1>Select Your Crop and Soil Type</h1>
+            <form method="POST">
+                <label for="crop">Choose a Crop:</label>
+                <select id="crop" name="crop" required>
+                    <option value="">--Select Crop--</option>
+                    <option value="paddy">Paddy</option>
+                    <option value="cotton">Cotton</option>
+                    <!-- Add more crops as needed -->
+                </select>
+
+                <label for="soil">Choose Soil Type:</label>
+                <select id="soil" name="soil" required>
+                    <option value="">--Select Soil Type--</option>
+                    <option value="clay">Clay</option>
+                    <option value="sandy">Sandy</option>
+                    <option value="loamy">Loamy</option>
+                    <option value="peat">Peat</option>
+                    <option value="chalky">Chalky</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

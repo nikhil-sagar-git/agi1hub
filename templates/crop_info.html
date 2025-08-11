@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ crop_info[1] }} Crop Information - AGRIHUB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">AGRIHUB</div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('homenew') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutnew') }}">About Us</a></li>
+                <li><a href="{{ url_for('communitynew') }}">Community</a></li>
+                <li><a href="{{ url_for('supportnew') }}">Support</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="crop-info-container">
+            <h1>{{ crop_info[1] }} Crop Information</h1>
+            <p><strong>Soil Type:</strong> {{ crop_info[2] }}</p>
+            
+            <h2>Growth Stages:</h2>
+            <ul>
+                <li><strong>Stage 1 (Starting Phase):</strong> {{ crop_info[3] }}</li>
+                <li><strong>Stage 2 (Growth Stage):</strong> {{ crop_info[4] }}</li>
+                <li><strong>Stage 3 (Harvest Stage):</strong> {{ crop_info[5] }}</li>
+            </ul>
+            
+            <h2>Fertilizers to use:</h2>
+            <p>{{ crop_info[6] }}</p>
+            
+            <a href="{{ url_for('home') }}">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>
